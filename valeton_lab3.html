@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <h2>
+        <a href="#home">Home</a> |
+        <a href="#about">About Me</a> |
+        <a href="#contact-me">Contact</a> |
+        <a href="#skills">Skills</a>
+    </h2>
+</header>
+
+<button id="themeBtn">Toggle Dark Mode</button>
+
+<section id="main-content">
+    
+    <div class="left-column">
+
+        <h1 id="home">My Profile</h1>
+
+        <div class="profile-section">
+            <img src="dpunif.jpeg" alt="My Photo" class="profile-img">
+            <h2 class="name-heading">John Allain R. Valenton</h2>
+            <p class="job-title">BSIT Student</p>
+
+            <button id="editJobBtn">Edit Job Title</button>
+        </div>
+
+        <hr>
+
+        <div id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>
+                Hi, Im Lain. I am the type of person who keeps things simple and chill.
+                I like learning new things, working on whatever tasks I need to finish,
+                and figuring things out along the way. I enjoy tech, creating things in my own style,
+                and helping out whenever I can. Nothing too serious, just doing my thing and trying to improve little by little.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="right-column">
+
+        <div id="contact-me" class="contact-section">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:valentonjr@students.nu-fairview.edu.ph">valentonjr@students.nu-fairview.edu.ph</a></p>
+            <p>Phone: ____________________</p>
+        </div>
+
+        <hr>
+
+        <button id="toggleSkillsBtn">Hide Skills</button>
+
+        <div id="skillsSection">
+            <div id="skills" class="skills-section">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Basic Computer Skills</li>
+                    <li>Communication Skills</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="experience-section">
+            <h2>Experience / Achievements</h2>
+            <p>CTSO Committee Member</p>
+            <p>Grade 12 - With High Honor</p>
+            <p>Grade 11 - With Honor</p>
+        </div>
+
+        <hr>
+
+        <div class="message-section">
+            <h2>Message Me</h2>
+
+            <p>Characters left: <span id="counter">200</span></p>
+
+            <form class="message-form" onsubmit="return validateForm()">
+
+                <p>
+                    <label>Name:</label><br>
+                    <input type="text" id="nameField">
+                </p>
+
+                <p>
+                    <label>Email:</label><br>
+                    <input type="email" id="emailField">
+                </p>
+
+                <p>
+                    <label>Your Message:</label><br>
+                    <textarea id="msgBox" maxlength="200" rows="5"></textarea>
+                </p>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+        <hr>
+
+        <button id="quoteBtn">Show Quote</button>
+        <p id="quoteText"></p>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>VALENTON</p>
+    <p id="dateDisplay"></p>
+</footer>
+
+</body>
+</html>

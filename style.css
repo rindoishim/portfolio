@@ -1,0 +1,152 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+#main-content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.job-title {
+    color: gray;
+    font-style: italic;
+}
+
+.contact-section p,
+.contact-section a {
+    font-size: 15px;
+    color: black;
+}
+
+.skills-section ul {
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skills-section li {
+    margin-bottom: 5px;
+}
+
+.about-section p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.message-form input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.message-form input[type="submit"]:hover {
+    background-color: lightgray;
+}
+
+.footer {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .navbar a {
+    color: white;
+}
+
+.dark-mode #main-content {
+    background-color: #121212;
+}
+
+.dark-mode .left-column,
+.dark-mode .right-column {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .skills-section ul {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .contact-section p,
+.dark-mode .contact-section a {
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    color: white;
+}
+
+.dark-mode .message-form input[type="submit"] {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #777;
+}
+
+.dark-mode .message-form input[type="submit"]:hover {
+    background-color: #3a3a3a;
+}
+
+.dark-mode .footer {
+    background-color: #1e1e1e;
+    color: white;
+}
