@@ -1,9 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Web Labs</title>
+<style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: Arial, sans-serif;
+       }
+       nav {
+           background-color: #222;
+           padding: 15px 0;
+       }
+       nav ul {
+           list-style: none;
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+       }
+       nav ul li a {
+           color: white;
+           text-decoration: none;
+           font-weight: bold;
+           transition: color 0.3s;
+       }
+       nav ul li a:hover {
+           color: #00bcd4;
+       }
+       .container {
+           height: calc(100vh - 60px);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+       }
+       .container h1 {
+           font-size: 60px;
+           letter-spacing: 5px;
+       }
+       .container p {
+           margin-top: 10px;
+           font-size: 18px;
+           color: #555;
+       }
+</style>
+</head>
 <body>
-<h1>My GitHub Pages Site</h1>
-<a href="valetonja_lab1.html">Lab 1</a>
-<a href="valeton_lab2.html">Lab 2</a>
-<a href="valeton_lab3.html">Lab 3</a>
+
+<nav>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="valentonja_lab1.html">LAB 1</a></li>
+<li><a href="lab2.html">LAB 2</a></li>
+<li><a href="valeton_lab3.html">LAB 3</a></li>
+<li><a href="lab4.html">LAB 4</a></li>
+</ul>
+</nav>
+
+<div class="container">
+<div>
+<h1>WELCOME</h1>
+<p>Select a lab from the navigation bar</p>
+</div>
+</div>
 </body>
 </html>
